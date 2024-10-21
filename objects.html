@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //how to decleare the object
+        const obj=[
+         {
+            name:'jagga',
+            age:24,
+            address:'mpl',
+            fullname:function(){
+                return this.name+' royal';
+            }
+        },
+        {
+            name:'jagga1',
+            age:24,
+            address:'mpl',
+            fullname:function(){
+                return this.name+' royal1';
+            }
+        }
+    ]
+        // //target property
+        // //1 way
+        // console.log(obj['age']);
+        // //2 way
+        // console.log(obj.address);
+
+        //adding extra property
+        // Object.seal(obj);
+        // obj.salary=543;
+        Object.freeze(obj)
+        obj.push({
+            name:'jagga3',
+            age:24,
+            address:'mpl',
+            fullname:function(){
+                return this.name+' royal3';
+            }
+        })
+        console.log(obj);
+        
+
+       
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            height: 50px;
+            width: 80px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="over" >up</h1>
+     <button onmouseover="over()" onmouseout="out()">cursurinout</button>
+    <h1 id="down" onmousedown="down()" onmouseup="up()">down</h1>
+    <h1 id="up" onmouseup="up()">up</h1>
+
+    <script>
+        function over(){
+            let h1=document.getElementById('over')
+             h1.style.backgroundColor='blue'
+
+        }
+        function out(){
+            let h1=document.getElementById('over')
+             h1.style.backgroundColor='yellow'
+             
+        }
+        function down(){
+            let h1=document.getElementById('down')
+             h1.style.backgroundColor='blue'
+
+
+        }
+        function up(){
+            let h1=document.getElementById('down')
+            h1.style.backgroundColor='brown'
+        }
+
+    </script>
+</body>
+</html>

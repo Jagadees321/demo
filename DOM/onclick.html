@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onclick="function hi(this){
+  const color = ['blue', 'cyan', 'yellow', 'green', 'pink']
+            const rondomcolor = color[Math.floor(Math.random() * color.length)]
+            body.style.backgroundColor = rondomcolor
+}">
+    <h1 onclick="change()" id="hi">hi</h1>
+    <script>
+       function change(){
+        let body=document.querySelector('body')
+         let h1=document.getElementById('hi')
+          
+         
+       }
+       let today=new Date()
+         console.log(today);
+         let hour=today.getHours()
+         console.log(hour);
+         let h1=document.getElementById('hi')
+         let p=document.createElement('p')
+         h1.appendChild(p)
+         
+         if(hour<=11){
+          p.innerHTML='good morning'
+         }else if(hour<=18){
+          p.innerHTML='good afternoon'
+          
+         }else{
+          p.innerHTML='good evening'
+         }
+
+    </script>
+    
+</body>
+</html>

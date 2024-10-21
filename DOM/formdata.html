@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" onsubmit="getdata(event)">
+        <label for="name">name</label>
+        <input type="text" name="name" id="name" required><br>
+        <label for="age">age</label>
+        <input type="number" name="age" id="age"><br>
+        <input type="submit">
+    </form>
+    <script>
+        let arr = [];
+        function getdata(e){
+            e.preventDefault();
+            let name1 = e.target.name.value;
+            let age = e.target.age.value;
+
+            console.log(name1);
+            console.log(age);
+            const obj = {
+                name: name1,
+                ageperson: age
+            };
+            arr.push(obj);
+            console.log(arr);    
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Cards</title>
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+    <div id="app">
+       
+        <header class="navbar">
+            <img src="logo.png" alt="Logo" class="logo">
+            <h1>Product Store</h1>
+            <input type="text" id="searchBar" placeholder="Search products...">
+        </header>
+
+        <div class="container">
+            <aside class="sidebar">
+                <ul>
+                    <li data-category="all">All Products</li>
+                    <li data-category="smartphones">Smartphones</li>
+                    <li data-category="apple">apples</li>
+                    <li data-category="fragrances">Fragrances</li>
+                    <li data-category="skincare">Skincare</li>
+                    <li data-category="red">Groceries</li>
+                </ul>
+            </aside>
+            
+            <main>
+                <section id="product-grid">
+                    
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <script src="product.js"></script>
+</body>
+</html>

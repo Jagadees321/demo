@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body id="body">
+    <h1 id="hi">hi</h1>
+    <div id="div">1 div value</div>
+    <script>
+         let h2tag=document.getElementById('hi')
+         console.log(h2tag);
+         let body=document.getElementById('body')
+        h2tag.innerHTML='hi,welcome'
+        h2tag.style.backgroundColor='yellow'
+        //create tag
+        let newtag=document.createElement('p')
+        newtag.innerText='new p tag'
+         
+        h2tag.appendChild(newtag)
+        body.removeChild(h2tag)
+        
+
+        let value=document.getElementById('div').textContent;
+        console.log(value);
+    </script>
+</body>
+</html>
